@@ -10,7 +10,7 @@ AJAX 不需要任何浏览器插件，但需要用户允许JavaScript在浏览�
 * 3.运用XML和XSLT操作资料;
 * 4.运用XMLHttpRequest或新的Fetch API与网页服务器进行异步资料交换；  
 *注意：AJAX与Flash、Silverlight和Java Applet等RIA技术是有区分的。*
-```
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,4 +47,4 @@ function loadXMLDoc()
 <button type="button" onclick="loadXMLDoc()">修改内容</button>
 
 </body>
-</html>```
+</html>
