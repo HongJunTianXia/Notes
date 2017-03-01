@@ -52,8 +52,15 @@ function loadXMLDoc()
 ###3.XMLHttpRequest 对象
 XMLHttpRequest 对象用于在后台与服务器交换数据。  
 XMLHttpRequest 对象是开发者的梦想，因为您能够：
-在不重新加载页面的情况下更新网页
-在页面已加载后从服务器请求数据
-在页面已加载后从服务器接收数据
-在后台向服务器发送数据
-所有现代的浏览器都支持 XMLHttpRequest 对象。
+* 1. 在不重新加载页面的情况下更新网页
+* 2.在页面已加载后从服务器请求数据
+* 3.在页面已加载后从服务器接收数据
+* 4.在后台向服务器发送数据
+* 5.所有现代的浏览器都支持 XMLHttpRequest 对象。
+#####创建 XMLHttpRequest 对象
+所有现代浏览器 (IE7+、Firefox、Chrome、Safari 以及 Opera) 都内建了 XMLHttpRequest 对象。
+通过一行简单的 JavaScript 代码，我们就可以创建 XMLHttpRequest 对象。
+#####创建 XMLHttpRequest 对象的语法：
+xmlhttp=new XMLHttpRequest();
+老版本的 Internet Explorer （IE5 和 IE6）使用 ActiveX 对象：
+xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
