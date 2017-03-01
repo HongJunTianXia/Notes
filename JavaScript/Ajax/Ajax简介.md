@@ -9,5 +9,5 @@ AJAX 不需要任何浏览器插件，但需要用户允许JavaScript在浏览�
 * 1.运用XHTML+CSS来表达资讯；
 * 2.运用JavaScript操作DOM（Document Object Model）来执行动态效果；
 * 3.运用XML和XSLT操作资料;
-* 4.运用XMLHttpRequest或新的Fetch API与网页服务器进行异步资料交换；
+* 4.运用XMLHttpRequest或新的Fetch API与网页服务器进行异步资料交换；  
 *注意：AJAX与Flash、Silverlight和Java Applet等RIA技术是有区分的。*
