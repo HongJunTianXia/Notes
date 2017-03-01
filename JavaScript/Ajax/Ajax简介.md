@@ -47,7 +47,7 @@ function loadXMLDoc()
 <button type="button" onclick="loadXMLDoc()">修改内容</button>
 
 </body>
-</html>
+</html>```
 ###3.XMLHttpRequest 对象
 XMLHttpRequest 对象用于在后台与服务器交换数据。  
 XMLHttpRequest 对象是开发者的梦想，因为您能够：
