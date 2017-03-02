@@ -35,3 +35,19 @@ JSON 数组在中括号中书写：
 ]
 }
 ```
+###JSON 使用 JavaScript 语法  
+因为 JSON 使用 JavaScript 语法，所以无需额外的软件就能处理 JavaScript 中的 JSON。  
+通过 JavaScript，您可以创建一个对象数组，并像这样进行赋值：  
+```
+var sites = [
+    { "name":"runoob" , "url":"www.runoob.com" }, 
+    { "name":"google" , "url":"www.google.com" }, 
+    { "name":"微博" , "url":"www.weibo.com" }
+];
+```
+可以像这样访问 JavaScript 对象数组中的第一项（索引从 0 开始）：  
+sites[0].name;
+
+###JSON 文件
+* 1.JSON 文件的文件类型是 ".json"
+* 2.JSON 文本的 MIME 类型是 "application/json"
