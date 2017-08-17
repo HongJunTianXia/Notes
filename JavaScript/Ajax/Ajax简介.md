@@ -58,7 +58,7 @@ XMLHttpRequest 对象是开发者的梦想，因为您能够：
 * 4.在后台向服务器发送数据
 * 5.所有现代的浏览器都支持 XMLHttpRequest 对象。
 
-** 创建 XMLHttpRequest 对象  **  
+** 创建 XMLHttpRequest 对象 **  
 所有现代浏览器 (IE7+、Firefox、Chrome、Safari 以及 Opera) 都内建了 XMLHttpRequest 对象。
 通过一行简单的 JavaScript 代码，我们就可以创建 XMLHttpRequest 对象。    
 ** 创建 XMLHttpRequest 对象的语法：  **  
