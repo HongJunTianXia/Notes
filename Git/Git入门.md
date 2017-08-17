@@ -20,9 +20,9 @@ git commit 命令的-a选项可将所有被修改或者已删除的且已经被g
 千万注意，-a不会造成新文件被提交，只能修改。<br/>
 # 发布版本
 我们先从服务器克隆一个库并上传。<br/>
-git clone ssh://example.com/~/www/project.git<br/>
+git clone ssh://example.com/*/*.git<br/>
 现在我们修改之后可以进行推送到服务器。<br/>
-git push ssh://example.com/~/www/project.git<br/>
+git push ssh://example.com/*/*.git<br/>
 # 取回更新
 如果您已经按上面的进行push，下面命令表示，当前分支自动与唯一一个追踪分支进行合并。<br/>
 git pull<br/>
