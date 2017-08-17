@@ -1,4 +1,4 @@
-#git最基本用法
+# git最基本用法
 ### 创建新仓库
 1. touch README.md
 2. git init
