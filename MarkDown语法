@@ -26,7 +26,6 @@ Emphasis 文本强调：
 
 
 Lists 列表：
-
 Unordered 无序列表：
 * 无序列表
 * 子项
@@ -50,10 +49,10 @@ Ordered 有序列表：
 - 第三行
  
  
+ 
 组合：
 * 产品介绍（子项无项目符号）
     此时子项，要以一个制表符或者4个空格缩进
- 
 * 产品特点
     1. 特点1
     - 特点2
@@ -62,6 +61,7 @@ Ordered 有序列表：
     1. 功能1
     - 功能2
     - 功能3
+ 
  
 可有时我们会出现这样的情况，首行内容是以日期或数字开头：2013. 公司年度目标。
 为了避免也被转化成有序列表，我们可以在"."前加上反斜杠（转义符）：2013\. 公司年度目标。
@@ -120,10 +120,10 @@ Code and Syntax Highlighting 代码和语法高亮：
     s = "Python syntax highlighting"
     print s
 ```
-Block Code 代码分组(代码区块)：
 
+
+Block Code 代码分组(代码区块)：
 在该行开头缩进4个空格或一个制表符(tab)
- 
 <strong>Blockquotes 引用：</strong>
 > Email-style angle brackets
 > are used for blockquotes.
@@ -131,24 +131,27 @@ Block Code 代码分组(代码区块)：
 > #### Headers in blockquotes
 > * You can quote a list.
 > * Etc.
-Hard Line Breaks 换行：
 
+
+Hard Line Breaks 换行：
 在一行的结尾处加上2个或2个以上的空格，也可以使用</br>标签
 第一行文字，
 第二行文字
-Horizontal Rules 水平分割线：
 
+
+Horizontal Rules 水平分割线：
 ***
 * * *
 - - -
-Escape character 转义符(反斜杠)：
 
+Escape character 转义符(反斜杠)：
 Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果，你可以在星号的前面加上反斜杠：
 \*literal asterisks\*
 Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：
 \反斜杠  `反引号  *星号  _下划线  {}花括号  []方括号  ()括弧  #井字号  +加号  -减号  .英文句 !感叹号
-Additional 补充：
 
+
+Additional 补充：
 Markdown也支持传统的HTML标签。
 比如一个链接，你不太喜欢Markdown的写法，也可以直接写成<a href="http://www.baidu.com">百度</a>
 
