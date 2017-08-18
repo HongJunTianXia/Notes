@@ -34,7 +34,7 @@
 
 如果不想或者不会编辑config文件的话，可以在bush上输入如下命令行：
 
-*$ git config branch.master.remote origin *
+*$ git config branch.master.remote origin*
 
 *$ git config branch.master.merge refs/heads/master*
 
