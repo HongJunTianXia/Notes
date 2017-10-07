@@ -43,3 +43,5 @@ branch命令不会将我们带入分支，只是创建一个新分支。所以�
 *git merge test*<br/>
 如果您想删除分支，我们使用-d标识。<br/>
 *git branch -d test*<br/>
+### 清除缓存
+*git rm -r --cached .*
