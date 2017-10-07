@@ -1,2 +1,2 @@
-# StudyNotes
-My study notes and summary.
+# Notes
+Some study records.
