@@ -28,11 +28,9 @@ text：返回纯文本字符串。
 
  #### 8.beforeSend：
 要求为Function类型的参数，发送请求前可以修改XMLHttpRequest对象的函数，例如添加自定义HTTP头。在beforeSend中如果返回false可以取消本次ajax请求。XMLHttpRequest对象是惟一的参数。
-```
             function(XMLHttpRequest){
                this;   //调用本次ajax请求时传递的options参数
             }
-            ```
  #### 9.complete：
 要求为Function类型的参数，请求完成后调用的回调函数（请求成功或失败时均调用）。参数：XMLHttpRequest对象和一个描述成功请求类型的字符串。
           function(XMLHttpRequest, textStatus){
@@ -66,12 +64,10 @@ text：返回纯文本字符串。
 
  #### 14.dataFilter：
 要求为Function类型的参数，给Ajax返回的原始数据进行预处理的函数。提供data和type两个参数。data是Ajax返回的原始数据，type是调用jQuery.ajax时提供的dataType参数。函数返回的值将由jQuery进一步处理。
-```
             function(data, type){
                 //返回处理后的数据
                 return data;
             }
-```
  #### 15.global：
 要求为Boolean类型的参数，默认为true。表示是否触发全局ajax事件。设置为false将不会触发全局ajax事件，ajaxStart或ajaxStop可用于控制各种ajax事件。
 
