@@ -1,4 +1,4 @@
-# git最基本用法
+# git基本用法
 ### 创建新仓库
 1. touch README.md 创建一个新文件
 2. git init        使当前文件夹成为一个Git仓库
