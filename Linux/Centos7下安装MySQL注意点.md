@@ -1,7 +1,7 @@
 * 下载并解压rpm-bundle.tar
 * 将解压后的包进行安装<br/>
 ```
-mysql-community-common
+ mysql-community-common
  mysql-community-libs 
  mysql-community-client 
  mysql-community-server  
