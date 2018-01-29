@@ -15,4 +15,5 @@ ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: N
 ```
 [mysqld]
 skip-grant-tables
-```后保存,`systemctl restart mysqld`重启mysql,即可解决问题.
+```
+后保存,`systemctl restart mysqld`重启mysql,即可解决问题.
