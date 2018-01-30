@@ -1,2 +1,2 @@
 # Notes
-Some study records
+
