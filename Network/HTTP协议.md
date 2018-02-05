@@ -39,9 +39,9 @@ CONNECT：要求用隧道协议连接代理(CONNECT 方法要求在与代理服�
 加 密后经网络隧道传输。)
 ```
 ## 4.HTTP报文格式
-<img src="https://github.com/withstars/Notes/Static/1.PNG">
-<img src="https://github.com/withstars/Notes/Static/2.PNG">
-<img src="https://github.com/withstars/Notes/Static/3.PNG">
+<img src="https://github.com/withstars/Notes/blob/master/Static/1.PNG">
+<img src="https://github.com/withstars/Notes/blob/master/Static/2.PNG">
+<img src="https://github.com/withstars/Notes/blob/master/Static/3.PNG">
 
 ## 5.HTTP首部
 #### 通用首部字段
