@@ -29,3 +29,4 @@
 | Ctrl + Shift + U        | 对选中的代码进行大 / 小写轮流转换 |
 | Ctrl + Shift + Enter    | 自动结束代码，行末自动添加分号 |
 | F2                      | 跳转到下一个高亮错误 或 警告位置 |
+| alt + insert            | 生成 getter /setter |
