@@ -5,8 +5,8 @@ $ docker stop 2b1b7a428627 停止容器
 $ docker run ubuntu:15.10 /bin/echo "Hello world"  Docker 以 ubuntu15.10 镜像创建一个新容器，然后在容器里执行 bin/echo "Hello world"，然后输出结果。
 
 # 运行一个web应用
-runoob@runoob:~# docker pull training/webapp  # 载入镜像
-runoob@runoob:~# docker run -d -P training/webapp python app.py
+$ docker pull training/webapp  # 载入镜像
+$ docker run -d -P training/webapp python app.py
 -d:让容器在后台运行。
 -P:将容器内部使用的网络端口映射到我们使用的主机上。
 
