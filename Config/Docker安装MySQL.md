@@ -13,6 +13,8 @@ $ docker run --name mymysql -p 32xxx:3306 -e MYSQL_ROOT_PASSWORD=1234 -d mysql:l
 $ docker exec -it mymysql bash
 
 # 查看日志
-$ docker logs mingxie-mysql
+$ docker logs mymysql
+
+
 
 ```
