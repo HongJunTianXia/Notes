@@ -4,6 +4,8 @@ $ docker ps -a 列出全部容器
 $ docker logs 2b1b7a428627  列出标准输出
 $ docker stop 2b1b7a428627 停止容器
 $ docker run ubuntu:15.10 /bin/echo "Hello world"  Docker 以 ubuntu15.10 镜像创建一个新容器，然后在容器里执行 bin/echo "Hello world"，然后输出结果。
+$ docker exec -it MyTomcat /bin/bash 进入容器
+
 
 # 运行一个web应用
 $ docker pull training/webapp  # 载入镜像
