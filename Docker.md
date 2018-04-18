@@ -58,3 +58,14 @@ $ docker port adoring_stonebraker 5000
 # docker有一个连接系统允许将多个容器连接在一起，共享连接信息。
 # docker连接会创建一个父子关系，其中父容器可以看到子容器的信息。
 $ docker run -d -P --name runoob training/webapp python app.py
+
+# 复制文件
+# 从容器拷贝文件到宿主机
+# test.js从容器里面拷到宿主机的/opt路径下面
+# 在宿主机上执行
+$ docker cp testtomcat：/usr/local/tomcat/webapps/test/js/test.js  /opt
+# 从宿主机拷贝文件到容器
+# 将宿主机/opt/test.js文件拷贝到容器里面的/usr/local/tomcat/webapps/test/js路径下
+# 在宿主机上执行
+$ docker cp /opt/test.js testtomcat：/usr/local/tomcat/webapps/test/js
+```
