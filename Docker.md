@@ -68,4 +68,23 @@ $ docker cp testtomcat：/usr/local/tomcat/webapps/test/js/test.js  /opt
 # 将宿主机/opt/test.js文件拷贝到容器里面的/usr/local/tomcat/webapps/test/js路径下
 # 在宿主机上执行
 $ docker cp /opt/test.js testtomcat：/usr/local/tomcat/webapps/test/js
+
+# 容器互联
+# 先创建一个容器
+$ docker run -d --name db training/postgres
+# 然后创建一个新的web容器，并将它连接到db容器
+$ docker run -d -P --name web --link db:db trainging/webapp
+# 此时db容器和web容器建立互联关系
+# --link参数的格式为--link name:alias，其中name是要连接的容器名称,alias是这个连接的别名
+# Docker相当于在两个互联的容器之间建立了一个虚拟通道，而且不用映射它们的端口到宿主主机上
+# 在启动db容器的时候并没有使用-p和-P标记，从而避免可暴露数据库服务端口到外部网络上
+
+# docker通过两种方式为容器公开连接信息
+1. 环境变量(使用env命令来查看web容器的环境变量)
+$ env
+2. 查看/etc/hosts文件
+$ cat /etc/hosts
+可以使用ping来测试容器连接性，服务连接端口为容器内部端口
+
+
 ```
