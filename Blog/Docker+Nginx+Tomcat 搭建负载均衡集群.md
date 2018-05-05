@@ -15,7 +15,7 @@ Tomcat是常用的Servlet容器。<br/>
 ## 二.步骤
 ### ①.在多个Tomcat容器上部署应用
     创建Tomcat容器
-     ```
+```
      # 将宿主机8080端口映射到容器8080端口并链接mysql容器
      docker run -d -p 8080:8080 --name mytomcat --link mymysql tomcat
      
@@ -33,10 +33,10 @@ Tomcat是常用的Servlet容器。<br/>
     
     # 为了方便，重命名应用名为ROOT.war并拷贝到容器webapps目录下，tomcat会自动部署应用到根URL路径
      docker cp ROOT.war mytomcat:/usr/local/tomcat/webapps/ROOT.war
-     ```
+```
      根据上述步骤，再创建一个Tomcat容器并部署应用,宿主机端口可映射为8081
 ### ②. 准备搭建Nginx服务
-    ​```
+​```
     # 创建mynginx目录并进入该目录
     cd /usr/local/docker/mynginx
     
@@ -50,11 +50,11 @@ Tomcat是常用的Servlet容器。<br/>
     │   └── error.log
     └── www
         └── index.html
-     ```
+```
     
     修改nginx.conf为如下内容
     
-     ```
+```
      user www-data;
      worker_processes auto;
      pid /run/nginx.pid;
@@ -126,11 +126,11 @@ Tomcat是常用的Servlet容器。<br/>
           
     }
     }
-
+```
 ### ③.搭建Nginx服务
 
  创建容器
-
+```
     docker run -p 8093:80 --name mynginx  -v $PWD/conf/nginx.conf:/etc/nginx/nginx.conf -v $PWD/www:/opt/nginx/www -v $PWD/log:/opt/nginx/log  -d nginx
 
      命令说明：
@@ -139,7 +139,7 @@ Tomcat是常用的Servlet容器。<br/>
      -v $PWD/conf/nginx.conf:/etc/nginx/nginx.conf：将主机中当前目录下的nginx.conf挂载到容器的/etc/nginx/nginx.conf
      -v $PWD/www:/opt/nginx/www：将主机中当前目录下的www挂载到容器的/opt/nginx/www，参考nginx.conf的root配置
      -v $PWD/log:/opt/nginx/log：将主机中当前目录下的log挂载到容器的/opt/nginx/log，参考nginx.conf的log配置
-    ​```
+```
 ### ④.查看结果
 打开http://localhost,可以发现nginx已经将http请求发送到172.17.0.3:8080或172.17.0.4:8080后端tomcat服务器。
 
