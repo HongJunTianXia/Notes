@@ -19,3 +19,6 @@ source <(kubectl completion zsh)
 source /usr/local/Cellar/kube-ps1/0.6.0/share/kube-ps1.sh
 PROMPT=‘$(kube_ps1)’$PROMPT
 ```
+
+
+步骤：https://www.jianshu.com/p/9c3439cc3bdb
